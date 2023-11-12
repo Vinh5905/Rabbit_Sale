@@ -1,0 +1,141 @@
+:root {
+	--white-color: white;
+	--black-color: black;
+	--text-color: #333;
+	--monsterrat:  "Montserrat", sans-serif;
+	--linear-gradient:0deg;
+	--linear-1: rgb(247, 164, 164);
+	--linear-2: rgb(250, 250, 175);
+	--linear-3: rgb(178, 249, 178);
+	--linear-4: rgb(170, 247, 251);
+	--linear-5: rgb(221, 187, 246);
+
+
+}
+
+* {
+	box-sizing: inherit;
+	-webkit-tap-highlight-color: transparent;
+
+}
+
+html {
+	/* HACK 1rem = 10px khi sử dụng font-size:62.5% */
+	font-size: 62.5%;
+	line-height: 1.75rem;
+	box-sizing: border-box;
+	font-family: "Ysabeau Infant", sans-serif;
+}
+
+.logo__img {
+}
+
+.logo__text {
+	font-family: "Russo One", sans-serif;
+	color: #11b7ff;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.grid__full-width {
+    width:100%;
+
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+	margin-left:-12px;
+	margin-right:-12px;
+}
+
+.grid__column-2 {
+	padding-left: 12px;
+	padding-right:12px;
+	width:16.6667%;
+}
+
+.grid__column-10 {
+	padding-left: 12px;
+	padding-right:12px;
+	width:83.3334%;
+}
+
+.grid__column-2-10 {
+	padding-left: 12px;
+	padding-right:12px;
+	width:20%;
+	position: relative;
+}
+/* 
+
+.slidebar {
+	caret-color: rgb(29, 162, 213);
+}
+
+.slidebar:focus {
+	outline-color: rgb(134, 209, 243);
+} */
+
+
+.pagination {
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	padding-left:0;
+	list-style: none;
+}
+
+.pagination-items {
+	border-radius: 1rem;
+	overflow: hidden;
+	margin: 0 5px;
+}
+
+.pagination-items__link {
+	text-decoration: none;
+	color: rgba(0,0,0,0.7);
+	font-weight: 600;
+	font-size:25px;	display:block;
+	line-height: 40px;
+	text-align: center;
+	transition: all 0.15s linear;
+	padding: 0 16px;
+}
+
+.pagination-items__icon {
+
+}
+
+.pagination-items__link--3-points {
+	cursor: default;
+}
+
+.pagination-items__link--active .pagination-items__link {
+	background-color: #6ba8f3c4;
+	color:var(--white-color);
+}
+
+.pagination-items__link--active .pagination-items__link:hover {
+	background-color: #84b6f3c4;
+}
+
+.pagination-items__link:hover {
+	background-color: #9aeded;
+}
+
+.pagination-items__link--3-points:hover {
+	background-color: transparent;
+}
+
+.left-align {
+	margin-right: auto;
+}
+
+.right-align {
+	margin-left: auto;
+}
+
+.justify-align {
+	margin-right:auto;
+	margin-left:auto;
+}
